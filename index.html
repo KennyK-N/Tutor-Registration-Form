@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+		<link rel="short cut icon" href="chrome.PNG">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+		<title>Registration for Tutor</title>
+	</head>
+	<body>
+		<div id="particles-js"></div>
+		<br>
+		<a href="https://kennyk-n.github.io/Tutor-Registration-Form/" class="button-glow-button">Restart</a>
+		<div class="container">
+			<div class="header">
+				<h1 class="headerinside"> Tutor Sign Up Form </h1>
+			</div>
+			<div class="createaccount" id="animation"></div>
+			<form>
+				<p class="genderheadtitle">Gender:</p>
+				<input type="radio" id="Male" name="gender" required>
+				<label for="Male" class="radiotitle">Male</label>
+				<input type="radio" id="Female" name="gender" required>
+				<label for="Female" class="radiotitle">Female</label>
+				<input type="radio" id="Notspecified" name="gender" required>
+				<label for="Notspecified" class="radiotitle">I perfer not to say</label>
+				<div class="birthdate">
+					<label for="today">Birthday date:</label>
+					<br>
+					<input type="date" id="today" name"today" required title="Please enter a valid Birthday"> 
+				</div>
+				<div class="Initial">
+					<label for="Firstname">First Name:&nbsp</label>
+					<br>
+					<input type="text" id="Firstname" name="Firstname"class="textboxsize" pattern="^[A-Z]([a-z]+)$"required
+						title="Enter your First name with a Capital at the beginning" placeholder="Enter your First name">
+				</div>
+				<div class="lastname">
+					<label for="Lastname">Last Name:&nbsp</label>
+					<br>
+					<input type="text" id="Lastname" name="Lastname"class="textboxsize" pattern="^[A-Z]([a-z]+)$"required 
+						title="Enter your Last name with a Capital at the beginning" placeholder="Enter your last name">
+				</div>
+				<div class="phonenumber">
+					<label for="phone"> Enter phone number:</label>
+					<br>
+					<input type="tel" id ="phone" name="phone" pattern="^(\()(\d){3}(\))(\d){3}(-)(\d){4}$" required
+						title="Enter your phone in the format: (xxx)xxx-xxx or (605)255-2555" placeholder="Enter your phone number">
+				</div>
+				<div class="email">
+					<label for="email"> Enter email:</label>
+					<br>
+					<input type="email" id="email" name="email" pattern="(.+)(@)(.+)()(\.)(com)" required
+						title="Enter your email in the format: example@gmail.com, where exmaple could be any characters, and gmail could be any email service" 
+						placeholder="Enter your Email">
+				</div>
+				<div class="password">
+					<label for="pwd"> Enter password:</label>
+					<br>
+					<input type="password" id="pwd" name="pwd" minLength="6" pattern="^([A-z])(\w+)*.{6,}(\d)$" required 
+						title="Starts with a letter (any case), ends with a number, at least 8 characters long" 
+						placeholder="Enter your Password">
+				</div>
+				<div class="agreebox">
+					<input type="checkbox" id="agree" name="ThermalPaste" class="Agree" required>
+					<label for="agree" class="Agreement">I Agree to become an earnest Tutor</label>
+				</div>
+				<button class="glow-on-hover">submit</button>
+			</form>
+			<br><br>
+		</div>
+		<div class="accordion">
+			<button type="button" class="accordion__button">Instructions for signing up:</button>
+			<div class="accordion__content">
+				<p class="textstyle">
+					<br>
+					Gender: required, select one of the options.
+					<br><br>
+					Birthday: required, enter your birthday.
+					<br><br>
+					First Name: requires 1st Letter to be capitalize and rest lowercase.
+					<br><br>
+					Last Name: requires 1st Letter to be capitalize and rest lowercase.
+					<br><br>
+					Phone number: <br>Format: (xxx)xxx-xxx or (605)255-2555  
+					<br><br>
+					Email: <br>Format: example@gmail.com, gmail can be any email, .com and @ is required at the end.
+					<br><br>
+					Password: Starts with a letter (any case), ends with a number, at least 8 characters long.
+					<br><br>
+				</p>
+			</div>
+		</div>
+		<br>
+		<script src="particles.js"></script>
+		<script src="app.js"></script>
+		<script src="script.js"></script>
+		<script src="script1.js"></script>
+	</body>
+</html>
